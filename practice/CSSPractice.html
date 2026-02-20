@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Pratice</title>
+  <style>
+    body {
+      background-color: #eaeaea;
+      color: #000033;
+    }
+    h1 {
+      color: brown;
+      font-size: 2em;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p {
+      background-color: green;
+      color: white;
+    }
+    ul {
+      list-style: none;
+      padding:10px;
+    }
+    ul li a {
+      display: inline-block;
+      background-color: pink;
+      color: palevioletred;
+      padding: 8px 16px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-family: Arial, Verdana, sans-serif;
+      font-size: 0.95em;
+      letter-spacing: 0.5px;
+      transition: background-color 0.2s, color 0.2s;
+    }
+    #pink-cat {
+      Position: fixed;
+      right: 350px;
+      top: 170px;
+      width: 150px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <img src="pink-cat.jpg" alt="Pink Cat" id="pink-cat">
+  <h1>My Ugly CSS Text and Color Playground</h1>
+  <p>This is my first paragraph for the hands-on activity.</p>
+  <p style="background-color: blue; text-indent: 2em;">
+    This paragraph uses an inline style to make the text blue with a 2em indent.
+    Inline styles have the highest specificity, which is why they override other rules!
+  </p>
+  <h2>Useful CSS Resources</h2>
+  <ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN Web Docs – CSS</a></li>
+    <li><a href="https://css-tricks.com" target="_blank">CSS-Tricks</a></li>
+    <li><a href="https://www.w3schools.com/css/" target="_blank">W3Schools – CSS</a></li>
+    <li><a href="https://cssreference.io" target="_blank">CSS Reference</a></li>
+  </ul>
+
+</body>
+</html>

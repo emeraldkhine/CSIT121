@@ -1,0 +1,67 @@
+body {
+  font: 1.2em / 1.5 system-ui;
+  margin: 0 auto;
+  width: 90%;
+  min-width: 800px;
+  max-width: 1200px;
+}
+
+h1 {
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+li { flex: auto; }
+
+nav a {
+  font-size: 1.2em;
+  padding: 0 20px;
+  text-decoration: none;
+  color: red;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+header section {
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "text video"
+    "text video";
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+h1 { grid-area: heading; }
+header p { grid-area: text; margin: 0; }
+
+video {
+  grid-area: video;
+  width: 100%;
+  border: 1px solid black;
+}
+
+figure {
+  display: block;
+  margin-left: 20px;
+  padding: 20px;
+  background: gray;
+  border: 1px solid black;
+  width: fit-content; /* New thing I leanred to make the picture fit the container */
+}
+
+figcaption {
+  font-size: 0.8em;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Boxes Lab</title>
+  </head>
+<body>
+
+  <div id="box1">
+    <p>box 1</p>
+  </div>
+
+  <div id="box2">
+    <p>box 2</p>
+  </div>
+
+  <div>
+    <p>box 3</p>
+  </div>
+
+</body>
+  <style>
+
+    div {
+      width: 200px;
+      height: 200px;
+      border: 2px solid black; 
+      background-color: lightpink;
+      margin: 15px;
+      padding: 15px;
+    }
+
+    #box2 {
+      background-color: lightyellow;
+      float: right; }
+
+    #box1 {
+      background-color: lightblue;
+      position: absolute;
+      top: 50px;
+      left: 325px;
+    }
+
+  </style>
+
+</html>

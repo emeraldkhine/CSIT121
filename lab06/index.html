@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 06: UI/UX Evaluation</title>
+    <style>
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #fff8e1;
+        color: #1a1a1a;
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1rem;
+        line-height: 1.7;
+      }
+
+      .container {
+        max-width: 860px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+      }
+
+      #site-header {
+        background-color: #b22222;
+        border-left: 5px solid #f5c000;
+        padding: 1rem 1.25rem;
+        border-radius: 1px;
+        margin-bottom: 2rem;
+      }
+
+      #site-header h1 {
+        font-size: 1.8rem;
+        color: #ffffff;
+        margin-bottom: 0.25rem;
+      }
+
+      #site-header p {
+        font-size: 0.9rem;
+        color: #ffe08a;
+        margin: 0;
+      }
+
+      .screenshot-box {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        text-align: center;
+      }
+
+      .screenshot-box img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+        border-radius: 1px;
+      }
+
+      .screenshot-box p {
+        font-size: 0.8rem;
+        color: #b22222;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+      }
+
+      .eval-section {
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        font-size: 1.1rem;
+        color: #b22222;
+        border-bottom: 2px solid #f5c000;
+        padding-bottom: 0.25rem;
+        margin-bottom: 0.75rem;
+      }
+
+      p {
+        margin-bottom: 0.9rem;
+        color: #1a1a1a;
+      }
+
+      a {
+        color: #b22222;
+        text-decoration: underline;
+      }
+
+      a:hover {
+        color: #7a0000;
+        text-decoration: none;
+      }
+
+      ul.eval-list {
+        padding-left: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      ul.eval-list li {
+        margin-bottom: 0.4rem;
+        color: #1a1a1a;
+      }
+
+      .score-box {
+        background-color: #fff3cd;
+        border-left: 5px solid #f5c000; /* Matching the theme the left line the hearder and the footer */
+        border-radius: 1px;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1rem;
+      }
+
+      .score-box p {
+        margin: 0;
+        margin-bottom: 0.3rem;
+      }
+
+      .score-number {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #b22222;
+      }
+
+      .audit-img {
+        max-width: 100%;
+        border: 1px solid #ddd;
+        border-radius: 1px;
+        margin-top: 1rem;
+        display: block;
+      }
+
+      .recommendation {
+        background-color: #fff3cd;
+        border-left: 5px solid #f5c000;
+        border-radius: 1px;
+        padding: 1rem 1.25rem;
+      }
+
+      .recommendation p {
+        margin: 0;
+      }
+
+      footer {
+        background-color: #b22222;
+        border-left: 5px solid #f5c000;
+        border-radius: 1px;
+        padding: 1rem 1.25rem;
+        font-size: 0.875rem;
+        color: #ffe08a;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        text-align: center;
+      }
+      footer p {
+        font-size: 0.9rem;
+        color: #ffe08a;
+        margin: 0;
+      }
+
+      @media (max-width: 600px) /* For mobile */
+      {
+        .container {
+          padding: 0 1rem;
+        }
+        #site-header h1 {
+          font-size: 1.3rem;
+        }
+        .score-number {
+          font-size: 1.5rem;
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+
+      <header id="site-header">
+        <h1>UI/UX Evaluation</h1>
+        <p>Lab 06 &mdash; CSIT 121 &mdash; Khin</p>
+      </header>
+
+      <main>
+        <section class="screenshot-box" aria-label="Screenshot of UMGC website homepage">
+          <img
+            src="umgc-homepage.png"
+            alt="Screenshot of the University of Maryland Global Campus homepage">
+          <p>Fig. 1 &mdash; Screenshot of UMGC homepage (umgc.edu)</p>
+        </section>
+
+        <!-- I named eval-section for all 10 questions -->
+         <!-- Q1 -->
+        <section class="eval-section">
+          <h2>What is the URL of the website?</h2>
+          <p>
+            <a href="https://www.umgc.edu" target="_blank" rel="noopener noreferrer">https://www.umgc.edu</a>
+          </p>
+        </section>
+
+        <!-- Q2 -->
+        <section class="eval-section">
+          <h2>What is the name of the website?</h2>
+          <p>University of Maryland Global Campus (UMGC)</p>
+        </section>
+
+        <!-- Q3 -->
+        <section class="eval-section">
+          <h2>Who is the site's target audience?</h2>
+          <p>
+            UMGC's primary audience is adult learners, working professionals, and military students,
+            and online students who want flexible education.
+          </p>
+        </section>
+
+        <!-- Q4 -->
+        <section class="eval-section">
+          <h2>How is the site organized?</h2>
+          <p>
+            UMGC uses a hierarchical organization. The main navigation at the top 
+            contains categories like Academic Programs, Tuition &amp; Finances, Admission, 
+            Transfers &amp; Credits, About UMGC, Military, and UMGC Blog. Each of the links have 
+            a dropdown with more specific pages. Everything branches out from the homepage 
+            like a tree structure.
+          </p>
+        </section>
+
+        <!-- Q5 -->
+        <section class="eval-section">
+          <h2>Which CRAP Design Principles does the site use?</h2>
+          <p>UMGC uses all four CRAP principles.</p>
+          <ul class="eval-list">
+            <li>
+              <strong>Contrast:</strong> The site uses a bold red and white color scheme throughout. 
+              The yellow "Apply Now" and "Request Info" buttons stand out clearly against the white 
+              background, making the most important actions easy to spot immediately.
+            </li>
+            <li>
+              <strong>Repetition:</strong> The same red color, the same font style, and the same 
+              button design are repeated consistently on every page.
+            </li>
+            <li>
+              <strong>Alignment:</strong> The navigation bar, and content blocks are 
+              all cleanly aligned in a structured grid. Text and images line up neatly.
+             </li>
+            <li>
+              <strong>Proximity:</strong> Related items are grouped together clearly. For example, 
+              on the homepage, the degree search dropdowns and the "Compare Degrees" button are 
+              placed right next to each other so users understand they belong to the same action.
+            </li>
+          </ul>
+        </section>
+
+        <!-- Q6 -->
+        <section class="eval-section">
+          <h2>What is the Audit Score according to the Accessibility Checker?</h2>
+        <!-- I wanted to styled the percentage score box match with the recommdation box so, there are two red hearder and two yellow box middle of the page -->
+          <div class="score-box" role="region" aria-label="Accessibility audit score for UMGC">
+            <p><span class="score-number">83%</span> &mdash; <strong>NOT COMPLIANT &mdash; MODERATE RISK</strong></p>
+            <p>Critical Issues: 5, Passed Audits: 48, Required Manual Audits: 22, Not Applicable: 39</p>
+            <p>Source: Accessibility Checker</p>
+          </div>
+
+          <p>The 2 critical issue categories found:</p>
+          <ul class="eval-list" aria-label="List of critical accessibility issues found on UMGC">
+            <li>
+              <strong>Issue 1:</strong> Heading order is not semantically correct — 3 elements affected. 
+              Some pages skip heading levels.
+            </li>
+            <li>
+              <strong>Issue 2:</strong> Not all page content is contained within landmarks — 2 elements affected. 
+             Some pages are missing main landmarks, which makes it harder for assistive technologies to navigate the page structure. 
+            </li>
+          </ul>
+
+          <img
+            src="accessibility_score.jpg"
+            alt="Accessibility checker audit results showing UMGC scored 83 percent."
+            class="audit-img">
+        </section>
+
+        <!-- Q7 -->
+        <section class="eval-section">
+          <h2>What is the site's effectiveness?</h2>
+          <p>
+            UMGC is highly effective for its main purpose. Prospective students can quickly find 
+            degree programs, check start dates, request information, and apply all from the 
+            homepage. The search tool that lets users filter by degree type and field of study is 
+            especially helpful for completing the main goal of finding the right program. The site 
+            does a good job guiding users toward the most important actions.
+          </p>
+        </section>
+
+        <!-- Q8 -->
+        <section class="eval-section">
+          <h2>What is the site's efficiency?</h2>
+          <p>
+            The site is fairly efficient. The top navigation has clear labels and dropdown menus 
+            that let users jump directly to what they need without many extra clicks. Important 
+            actions like "Apply Now" and "Request Info" are always visible at the top of every page.
+          </p>
+        </section>
+
+        <!-- Q9 -->
+        <section class="eval-section">
+          <h2>How is the engagement?</h2>
+          <p>
+            UMGC's website is pleasant and professional. It is appropriate for a university 
+            audience. The homepage does a good job of immediately showing upcoming start dates 
+            and program options, which keeps engaged and moving toward 
+            taking action. Overall, the experience feels organized and encouraging.
+          </p>
+        </section>
+
+        <!-- Q10-->
+        <section class="eval-section">
+          <h2>Recommendation to Improve the Website</h2>
+          <div class="recommendation">
+            <p>
+              UMGC should fix its heading order issue. The audit 
+              found that some pages skip heading levels which breaks the semantic structure 
+              of the page. This makes it difficult for screen readers to understand the hierarchy 
+              of the content and harder for blind or low mobility users to navigate efficiently. 
+              Since UMGC serves military members and students with disabilities, 
+              making sure the site works well for everyone is especially important.
+            </p>
+          </div>
+        </section>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Emerald K &mdash; CSIT 121 &mdash; Lab 06 &mdash; Website Usability Evaluation</p>
+      </footer>
+
+    </div>
+  </body>
+</html>

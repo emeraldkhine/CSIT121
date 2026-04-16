@@ -45,9 +45,10 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 40px 24px;
   flex: 1;
   box-sizing: border-box;
+  width: 100%
   
 }
 
@@ -110,7 +111,6 @@ tbody tr:hover {
   border-left: 4px solid var(--pink-accent);
   border-radius: 8px;
   padding: 24px 28px;
-  box-shadow: var(--shadow);
 }
 
 .reflection h2 {
@@ -145,10 +145,6 @@ a:active {
   color: var(--pink-accent);
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .form-box {
   background-color: var(--white);
   border-radius: 10px;
@@ -157,6 +153,7 @@ a:active {
   box-sizing: border-box;
   width: 100%;
   margin: 0 auto;
+  display: block;
 }
 
 .form-group {

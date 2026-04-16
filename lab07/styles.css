@@ -48,7 +48,7 @@ body {
   padding: 40px 24px;
   flex: 1;
   box-sizing: border-box;
-  width: 100%
+  width: 100%;
   
 }
 
@@ -161,6 +161,7 @@ a:active {
 }
 
 label {
+  display: block;
   font-weight: bold;
   margin-bottom: 6px;
   color: var(--text-dark);
@@ -184,6 +185,7 @@ textarea {
   font-size: 0.95rem;
   color: var(--text-dark);
   background-color: var(--bg);
+  box-sizing: border-box;
 }
 
 input[type="text"]:focus,
@@ -207,7 +209,6 @@ fieldset {
 
 fieldset label {
   font-weight: normal;
-  display: flex;
   align-items: center;
   gap: 8px;
   margin-bottom: 8px;

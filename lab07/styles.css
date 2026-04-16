@@ -45,8 +45,10 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 40px 24px;
+  padding: 0 20px;
   flex: 1;
+  box-sizing: border-box;
+  
 }
 
 .page-title {
@@ -141,6 +143,10 @@ a:hover {
 
 a:active {
   color: var(--pink-accent);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 .form-box {

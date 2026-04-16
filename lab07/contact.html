@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Feedback</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="tierlist.html" class="nav-link"> Tier List</a>
+    <a href="contact.html" class="nav-link active"> Contact</a>
+  </nav>
+
+  <main class="container">
+    <div class="form-box">
+    <h1 class="page-title">Share Your Thoughts</h1>
+      
+      <form>
+        <div class="form-group">
+          <label for="name">Your Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="First and Last Name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="e.g. suzy@email.com"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="comments">Your Comments:</label>
+          <textarea
+            id="comments"
+            name="comments"
+            rows="5"
+            maxlength="1600"
+            placeholder="Comments, suggestions, or questions about the tier list. We value your feedback!"
+            required>
+          </textarea>
+        </div>
+
+        <div class="form-group">
+  <label class="group-title">What is your skin problem?</label>
+  <fieldset>
+    <label><input type="radio" name="skin_problem" value="dark_spots"> Dark Spots</label>
+    <label><input type="radio" name="skin_problem" value="dry"> Dry</label>
+    <label><input type="radio" name="skin_problem" value="finelines"> Fine Lines & Wrinkles</label>
+    <label><input type="radio" name="skin_problem" value="acnes"> Acnes</label>
+    <label><input type="radio" name="skin_problem" value="dullness"> Dullness</label>
+  </fieldset>
+</div>
+
+<div class="form-group">
+  <label for="category">Favorite Skincare Category:</label>
+  <select id="category" name="category">
+    <option value="">Select one</option>
+    <option value="toner">Toner</option>
+    <option value="serum">Serum</option>
+    <option value="eye_care">Eye Care</option>
+    <option value="moisturizer">Moisturizer</option>
+    <option value="sunscreen">Sunscreen</option>
+    <option value="mask">Face Mask</option>
+    <option value="cleanser">Oil Cleanser</option>
+    <option value="eye_cream">Eye Cream</option>
+  </select> 
+</div> <!-- I asked AI for the dropdown options that can click "other" and when user click "other", they can type in their own option but it needs JavaScript -->
+
+<div class="form-group">
+  <label class="group-title">Which products from the list have you tried?</label>
+  <fieldset>
+    <label><input type="checkbox" name="tried" value="glutathione_toner"> Glutathione Toner</label>
+    <label><input type="checkbox" name="tried" value="kojic_acid"> Kojic Acid Cream</label>
+    <label><input type="checkbox" name="tried" value="ratinol_eyecream"> Ratinol Eye Cream</label>
+    <label><input type="checkbox" name="tried" value="niacinamide"> Niacinamide 10% + TXA 4</label>
+    <label><input type="checkbox" name="tried" value="spf"> SPF 50 Sunscreen</label>
+    <label><input type="checkbox" name="tried" value="moisturizer"> Hyaluronic Acid Moisturizer</label>
+    <label><input type="checkbox" name="tried" value="cleanser"> Oil Cleanser</label>
+    <label><input type="checkbox" name="tried" value="mask"> Face Mask</label>
+    <label><input type="checkbox" name="tried" value="eye_mask"> Eye Mask</label>
+  </fieldset>
+</div>
+
+        <button type="submit">Send Feedback</button>
+
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    Khin &nbsp;|&nbsp; <a href="mailto:khinkhine1116@gmail.com">Contact Me</a>
+  </footer>
+
+</body>
+</html>
+

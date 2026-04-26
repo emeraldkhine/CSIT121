@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<superhero>
+
+  <name>Solara</name>
+  <alias>Dr. Mara Voss</alias>
+  <age>34</age>
+  <gender>Female</gender>
+  <nationality>American</nationality>
+
+  <powers>
+    <power1>Solar energy absorption and storage</power1>
+    <power2>Photon beam projection — can fire concentrated light blasts</power2>
+    <power3>Flight at speeds up to Mach 3 in atmosphere</power3>
+    <power4>Thermokinesis — can raise or lower temperature within 30 feet</power4>
+    <power5>Healing factor — sunlight accelerates her cellular regeneration</power5>
+    <power6>Luminous shield — generates a defensive aura of hardened light</power6>
+  </powers>
+
+  <weaknesses>
+    <weakness1>Prolonged darkness drains her powers within 6 hours</weakness1>
+    <weakness2>Extremely cold environments slow her reflexes and reduce output</weakness2>
+    <weakness3>Overloading her energy reserves causes temporary blindness</weakness3>
+  </weaknesses>
+
+  <relationships>
+    <enemies>
+      <enemy1>Umbros</enemy1>
+      <enemy2>Glaciax</enemy2>
+    </enemies>
+
+    <friends>
+      <friend1>Ironwall</friend1>
+      <friend2>Cipher</friend2>
+    </friends>
+  </relationships>
+
+</superhero>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to JSON - How Is It Used?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Generating JSON from Tabular Data on the Web</h1>
+        <nav>
+            <a href="index.html">What Is It?</a>
+            <a href="importance.html">Why Is It Important?</a>
+            <a href="examples.html">How Is It Used?</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>How Is It Used?</h2>
+
+        <p>
+            Imagine you have a CSV file on your computer basically just rows and columns of data separated by commas containing a list of students, products, or survey responses. 
+            It might look something like this:
+        </p>
+
+        <pre>
+Name, Age, City
+Chaw, 25, Baltimore
+Poe, 30, Annapolis
+        </pre>
+
+        <p>
+            After applying the rules from this W3C standard, the CSV above would be converted into JSON that looks like this:
+        </p>
+
+        <pre>
+        <code>
+[
+  { "Name": "Chaw", "Age": "25", "City": "Baltimore" },
+  { "Name": "Poe", "Age": "30", "City": "Annapolis" }
+]
+        </code> 
+        </pre>
+
+        <p>
+            In the JSON version, every row from the CSV turns into its own object. The headers at the top of the CSV become the labels for each piece of data. 
+            For example, if the CSV has columns called “Name” and “Age,” those same labels appear inside the JSON objects. 
+            That structure works much better with JavaScript because the data can be accessed directly by name instead of by column position.
+        </p>
+
+        <p>
+            The standard can also include metadata, which is basically information about the data itself. 
+            It can describe what each column means, what kind of values are expected, or how the data should be interpreted. 
+            That becomes useful when the same dataset moves between different systems, because every application reads it the same way instead of guessing.
+        </p>
+
+        <p>
+            In data analysis, this kind of conversion comes up constantly because the data rarely stays in one place. 
+            A dataset might begin as a spreadsheet, get cleaned in a database, and then end up displayed on a website or sent through an API. 
+            Converting CSV data into JSON makes that process much easier because modern web applications already work naturally with JSON structures.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>2026 Emerald. CSIT 121 | Lab 10 | CSV to JSON Web Standard</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV to JSON - Why Is It Important?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Generating JSON from Tabular Data on the Web</h1>
+        <nav>
+            <a href="index.html">What Is It?</a>
+            <a href="importance.html">Why Is It Important?</a>
+            <a href="examples.html">How Is It Used?</a>
+            <a href="sources.html">Sources</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Why is it Important?</h2>
+
+        <p>
+            CSV files are everywhere. Researchers, businesses, and students use them every day because they are simple, lightweight, and easy to pass around. 
+            You can open one in Excel, Google Sheets, or even a basic text editor.
+            But here is the thing just because CSV files are easy to work with on your computer does not mean they are easy for websites and web applications to work with directly. 
+            JSON fits much better with JavaScript and modern web technologies, which is why most APIs and web systems end up converting CSV data into JSON before actually using it.
+        </p>
+
+        <p>
+            That conversion sounds straightforward, but it is not. Without a standard, two developers could take the exact same CSV file 
+            and come up with two different results depending on how they each decide to handle missing values, column names, dates, or data types. 
+            One developer assumes a blank cell means zero. Another assumes it means null. Suddenly the same dataset behaves differently in two different systems, and tracking down why can take hours. 
+            This W3C standard exists to prevent exactly that kind of problem by giving everyone one consistent and official way to do the conversion.
+        </p>
+
+        <p>
+            From a data analysis perspective, this hits close to home. 
+            Most of the datasets we start with are spreadsheets or CSV exports survey results, sales figures, whatever the client hands you. 
+            But the moment that data needs to show up in a dashboard, a web app, or an API, it has to become JSON first. 
+            Having a clear standard means the handoff from analyst to developer does not turn into a guessing game where something quietly gets lost or misread along the way.
+        </p>
+
+        <p>
+            The bigger picture here is that data analysis and web development are not as separate as they used to be. 
+            More companies are building data-driven websites, live dashboards, and online tools, and the data has to move cleanly between formats for any of that to work. 
+            A standard like this is easy to overlook, but without it, the conversion step becomes the weakest link in the whole chain.
+        </p>
+
+    </main>
+
+    <footer>
+        <p>2026 Emerald. CSIT 121 | Lab 10 | CSV to JSON Web Standard</p>
+    </footer>
+
+</body>
+</html>

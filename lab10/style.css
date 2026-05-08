@@ -3,6 +3,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    background-image: url("https://infatica.io/blog/content/images/2025/09/html-to-json-conversion-explained-with-python-and-javascript.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: #333;
 }
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lessons Learned — Emerald K CSIT 121</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <nav class="sidebar" id="sidebar" aria-label="Mobile navigation">
+    <button class="sidebar-close" onclick="hideSidebar()" aria-label="Close navigation menu">&#10005; Close</button>
+    <a href="index.html" class="sidebar-link">Home</a>
+    <a href="about.html" class="sidebar-link">About</a>
+    <a href="labs.html" class="sidebar-link">Labs</a>
+    <a href="reflection.html" class="sidebar-link active">Reflection</a>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-text">
+        <p class="header-label">CSIT 121 - Spring 2026</p>
+        <h1 class="header-title">Emerald K</h1>
+        <p class="header-sub">Web Development Portfolio</p>
+      </div>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link hide-on-mobile">Home</a>
+        <a href="about.html" class="nav-link hide-on-mobile">About</a>
+        <a href="labs.html" class="nav-link hide-on-mobile">Labs</a>
+        <a href="reflection.html" class="nav-link active hide-on-mobile">Reflection</a>
+        <button class="menu-btn" onclick="showSidebar()" aria-label="Open navigation menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="reflection-section">
+      <h2 class="section-heading">Lessons Learned</h2>
+
+      <article class="reflection-card">
+        <h3>Challenges and Triumphs</h3>
+        <p>
+          Going into this course, I already had some programming experience with Java and Python, but I had never written HTML or CSS before.
+          The first few labs were still challenging because web development requires a different way of thinking.
+          I was not writing logic or functions anymore. I was writing code that controlled the structure and layout of a webpage.
+          Remembering tags, closing elements correctly, and understanding how nesting worked took time to get used to.
+          Things started to make more sense once I understood the box model and how padding, margin, and borders affect layout.
+          That was probably one of the biggest turning points for me because I finally understood why elements moved and spaced themselves the way they did on a page.
+        </p>
+      </article>
+
+      <article class="reflection-card">
+        <h3>Testing on Multiple Browsers and Devices</h3>
+        <p>
+          I tested my pages on Chrome, Safari, and my iPhone to make sure everything worked correctly across different devices.
+          One thing I noticed was that the hamburger menu I built for Lab 08 behaved a little differently on mobile Safari.
+          The sticky header sometimes caused scrolling issues that never appeared on desktop Chrome.
+          That experience showed me why mobile testing matters instead of only resizing a browser window on a computer.
+          Overall, the layouts worked well across both browsers, but the experience taught me that responsive design is not only about screen size.
+          It is also about touch interaction, loading speed, and how different browsers handle the same code.
+        </p>
+      </article>
+
+      <article class="reflection-card">
+        <h3>What I Learned in This Course</h3>
+        <p>
+          CSIT 121 gave me a foundation that ended up being much more useful than I originally expected.
+          Before taking the course, I thought web development was mostly separate from my interest in business analysis and data.
+          As the semester went on, I started to realize how connected those areas actually are.
+          One of the biggest examples was the CSV to JSON web standard I researched in Lab 10.
+          That assignment helped me understand that websites are not just about appearance and design.
+          They are also used to organize, transfer, and present structured data, which connects closely to data analysis and business systems.
+          I also gained a much better understanding of accessibility. 
+          Running an accessibility audit on UMGC's website and finding real issues like incorrect heading order and missing landmarks made the topic feel practical instead of just theoretical.
+          It changed the way I look at websites now because I pay more attention to usability and structure.
+          Looking back at all ten labs together, I can clearly see my progress throughout the semester.
+          I started with a single HTML page with almost no styling, and by the end of the course I was building multi-page websites with JavaScript, XML parsing, responsive layouts, and more organized design choices.
+          The amount I learned in one semester surprised me, and I feel much more confident using these skills in future courses and projects.
+        </p>
+      </article>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Emerald K - CSIT 121 - CCBC</p>
+  </footer>
+
+  <script>
+    function showSidebar() {
+      document.getElementById('sidebar').classList.add('open');
+    }
+    function hideSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+    }
+    document.addEventListener('click', function(e) {
+      var sidebar = document.getElementById('sidebar');
+      if (sidebar.classList.contains('open') &&
+          !sidebar.contains(e.target) &&
+          !e.target.classList.contains('menu-btn')) {
+        hideSidebar();
+      }
+    });
+  </script>
+
+</body>
+</html>

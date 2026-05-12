@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Emerald K CSIT 121</title>
+  <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+  <nav class="sidebar" id="sidebar" aria-label="Mobile navigation">
+    <button class="sidebar-close" onclick="hideSidebar()" aria-label="Close navigation menu">&#10005; Close</button>
+    <a href="index.html" class="sidebar-link">Home</a>
+    <a href="about.html" class="sidebar-link active">About</a>
+    <a href="labs.html" class="sidebar-link">Labs</a>
+    <a href="reflection.html" class="sidebar-link">Reflection</a>
+  </nav>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-text">
+        <p class="header-label">CSIT 121 - Spring 2026</p>
+        <h1 class="header-title">Emerald K</h1>
+        <p class="header-sub">Web Development Portfolio</p>
+      </div>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="index.html" class="nav-link hide-on-mobile">Home</a>
+        <a href="about.html" class="nav-link active hide-on-mobile">About</a>
+        <a href="labs.html" class="nav-link hide-on-mobile">Labs</a>
+        <a href="reflection.html" class="nav-link hide-on-mobile">Reflection</a>
+        <button class="menu-btn" onclick="showSidebar()" aria-label="Open navigation menu">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-content">
+
+    <section class="intro-section">
+      <h2 class="section-heading">About Me</h2>
+
+      <div class="about-layout">
+
+        <div class="about-card">
+          <div class="about-photo-wrap">
+            <img
+              src="emerald.jpg"
+              alt="Photo of Emerald K"
+              class="about-photo">
+          </div>
+          <div class="about-text">
+            <h3>Hello, I'm Emerald.</h3>
+            <p>
+              I am an Information Technology and Business student at CCBC. I am interested in business analysis and data, 
+              especially how companies use information to make decisions and solve problems. 
+              That interest naturally led me to learning more about the technical side of systems and databases and 
+              how they are used in real businesses. 
+              My goal is to build both technical and business skills so I can work in business analysis or data-related fields in the future.
+            </p>
+            <p>
+              This semester I took CSIT 121, and it introduced me to web development in a way that connected with my interest in data. 
+              I learned that websites are not just about design and appearance.
+              They are also used to organize, transfer, and display structured information.
+            </p>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <h3>Skills & Hobbies</h3>
+          <p>Technical Skills</p>
+          <ul class="styled-list">
+            <li>HTML & CSS - semantic structure, responsive design</li>
+            <li>JavaScript - XML/JSON data</li>
+            <li>Data tracking, reporting & analysis</li>
+            <li>Accessibility evaluation</li>
+          </ul>
+          <p>Hobbies</p>
+          <ul class="styled-list">
+            <li>Reading</li>
+            <li>Investing & Trading</li>
+            <li>Spending time with family</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <h3>Favorite Learning Resources</h3>
+          <p>These are the sites and creators that helped me the most this semester:</p>
+          <ul class="styled-list">
+            <li><a href="https://developer.mozilla.org/en-US/" target="_blank">MDN Web Docs</a> my go-to reference for HTML and CSS</li>
+            <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a> quick examples and tutorials</li>
+            <li><a href="https://www.youtube.com/playlist?list=PL0Zuz27SZ-6Mx9fd9elt80G1bPcySmWit" target="_blank">Dave Gray on YouTube</a> clear CSS tutorials</li>
+            <li><a href="https://webaim.org/" target="_blank">WebAIM</a> accessibility techniques</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Emerald K - CSIT 121 - CCBC</p>
+  </footer>
+
+  <script>
+    function showSidebar() {
+      document.getElementById('sidebar').classList.add('open');
+    }
+    function hideSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+    }
+    document.addEventListener('click', function(e) {
+      var sidebar = document.getElementById('sidebar');
+      if (sidebar.classList.contains('open') &&
+          !sidebar.contains(e.target) &&
+          !e.target.classList.contains('menu-btn')) {
+        hideSidebar();
+      }
+    });
+  </script>
+
+</body>
+</html>
